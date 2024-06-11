@@ -32,7 +32,7 @@ function validateForm(x){
     }
 
     if (valid){
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }
 
