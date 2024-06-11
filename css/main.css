@@ -251,7 +251,7 @@ input[type=password]{
     contain: content;
     width: 2%; /* Adjust as necessary */
      height: 12%; /* Adjust as necessary */
-    background: url('./img/location-marker.png') no-repeat center center;
+    background: url('../img/location-marker.png') no-repeat center center;
     background-size: cover;
     z-index: 999;
     transition: all ease-in-out 200ms;
