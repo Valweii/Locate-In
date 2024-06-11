@@ -134,51 +134,51 @@ function openSettingsSide(){
 
 const Tenant = {
     haidilao: {
-        img: "/img/tenant-1.jpg",
+        img: "./img/tenant-1.jpg",
         desc: "Haidilao International Holding Ltd., or Haidilao (Chinese: 海底捞), is a Chinese hot pot chain renowned for industrial innovation and robotic automation. Founded in Jianyang, Sichuan in 1994, it has since grown to become China's largest hot pot chain."
     },
     zara: {
-        img: "/img/tenant-2.jpg",
+        img: "./img/tenant-2.jpg",
         desc: "Zara is a fast-fashion retail subsidiary of the Spanish multinational fashion design, manufacturing, and retailing group Inditex. Zara sells clothing, accessories, beauty products and perfumes. The head office is located at Arteixo."
     },
     balenciaga: {
-        img: "/img/tenant-3.jpg",
+        img: "./img/tenant-3.jpg",
         desc: "Balenciaga is a Spanish luxury fashion line that was founded in 1919 by couturier Cristóbal Balenciaga in San Sebastián. Balenciaga produces ready-to-wear footwear, handbags, and accessories, and licenses its name to Coty for fragrances."
     },
     uniqlo: {
-        img: "/img/tenant-4.jpg",
+        img: "./img/tenant-4.jpg",
         desc: "UNIQLO is an international clothing retailer that has a specialized knack for designing apparel that lasts. The simple, basics-inspired clothing created at UNIQLO continues to be successful trend cycle after trend cycle."
     },
     gyukaku: {
-        img: "/img/tenant-5.jpg",
+        img: "./img/tenant-5.jpg",
         desc: "Gyu-Kaku provides an authentic Japanese Yakiniku dining experience where anyone can be a chef and grill their own food, complete with a wonderful atmosphere perfect for gathering of friends and families."
     },
     hnm: {
-        img: "/img/tenant-6.jpg",
+        img: "./img/tenant-6.jpg",
         desc: "H & M Hennes & Mauritz AB, also known as H&M Group, is a multinational clothing company based in Sweden that focuses on fast-fashion clothing. As of 23 June 2022, H&M Group operated in 75 geographical markets with 4,801 stores."
     },
     xxi: {
-        img: "/img/tenant-7.jpg",
+        img: "./img/tenant-7.jpg",
         desc: "Cinema XXI presents an unforgettable viewing experience for today and tomorrow. For three consecutive years in 2017, 2018, 2019 Cinema XXI has been awarded the (World Branding Award) the Best Brand in the Entertainment Cinema Category. "
     },
     ibox: {
-        img: "/img/tenant-8.jpg",
+        img: "./img/tenant-8.jpg",
         desc: "iBox is a leading Reseller of Premium Apple Products in Indonesia which specializes in offering Apple products and various kinds of complementary accessories, software and others. iBox offers one-stop Apple digital lifestyle shopping."
     },
     timezone: {
-        img: "/img/tenant-9.jpg",
+        img: "./img/tenant-9.jpg",
         desc: "PT. Matahari Graha Fantasi is a joint venture company between LAI Asia Pte. Ltd (Leisure and Allied Industries) Singapore and PT. Nadya Prima Indonesia easily recognizable by its Timezone brand. We are the pioneer in the Family Entertainment Center industry."
     },
     wingstop: {
-        img: "/img/tenant-10.jpg",
+        img: "./img/tenant-10.jpg",
         desc: "Wingstop as The Wing Experts is dedicated to SERVING THE WORLD FLAVOR, offering chicken wings in the Crunchy Wings variant with bones or Boneless Wings which are available without bones."
     },
     kfc: {
-        img: "/img/tenant-11.jpg",
+        img: "./img/tenant-11.jpg",
         desc: "KFC Indonesia is an American fast food restaurant chain that specializes in fried chicken, established in 1978, has become synonymous with finger-lickin' good chicken, holding the title of #JagonyaAyam (The Master of Chicken) for over four decades."
     },
     jco: {
-        img: "/img/tenant-12.jpg",
+        img: "./img/tenant-12.jpg",
         desc: "J.CO Donuts & Coffee is an Indonesian cafe restaurant chain that specializes in donuts, coffee and frozen yogurt. J.CO is the fastest growing donut and coffee chain in Indonesia with 236 stores opened since 2005."
     }   
 }
@@ -192,7 +192,7 @@ function openTenant(category){
     tenantContent.innerHTML = `
         <img src="${currTenant.img}" alt="">
         <div id="tenant-content" class="flex flow-column gap gap-4">
-            <img src="/img/x.png" onclick="closeTenant()" alt="">
+            <img src="./img/x.png" onclick="closeTenant()" alt="">
             <h3 class="text white">${currTenant.desc}</h3>
         </div>
     `
