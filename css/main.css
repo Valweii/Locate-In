@@ -203,9 +203,7 @@ input[type=password]{
     width: 70%;
 }
 
-#view-all{
-    /* display: none; */
-}#view-map-1{
+#view-map-1{
     display: none;
 }#view-map-2{
     display: none;
