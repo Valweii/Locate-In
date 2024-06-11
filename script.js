@@ -55,6 +55,11 @@ function alphanumeric(password){
     }
 }
 
+function closeTenant(){
+    const tenantContent = document.getElementById('view-tenant');
+    tenantContent.innerHTML = '';
+}
+
 function viewmap(layer){
     let overview = document.getElementById("view-all")
     overview.style.display = "none"
@@ -85,6 +90,8 @@ function viewmap(layer){
         view3.style.display = "none"
         view4.style.display = "block"
     }
+
+    closeTenant()
 }
 
 function viewall(){
@@ -100,6 +107,8 @@ function viewall(){
 
     let overview = document.getElementById("view-all")
     overview.style.display = "flex"
+
+    closeTenant()
 }
 
 function openSettings(){
@@ -196,9 +205,4 @@ function openTenant(category){
             <h3 class="text white">${currTenant.desc}</h3>
         </div>
     `
-}
-
-function closeTenant(){
-    const tenantContent = document.getElementById('view-tenant');
-    tenantContent.innerHTML = '';
 }
