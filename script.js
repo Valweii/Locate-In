@@ -108,7 +108,7 @@ function viewall(){
     let overview = document.getElementById("view-all")
     overview.style.display = "flex"
 
-    closeTenant()
+    closeTenant();
 }
 
 function openSettings(){
