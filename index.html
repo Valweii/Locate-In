@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locate-In</title>
-    <link rel="stylesheet" href="/css/util.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/color.css">
-    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/font.css">
     
 </head>
 <body class="bg gray flex">
     <div id="content" class="flex w100">
         <div class="flex flow-column gap gap-4 space-between bg d-gray" id="sidebar">
             <div class="flex space-between" id="burger">
-                <img onclick=showSide() src="/img/burger.png" alt="">
+                <img onclick=showSide() src="./img/burger.png" alt="">
                 <h6 class="text green margin mt-4" id="logo">Locate-In</h6>
             </div>
 
             <!-- Responsive sidebar -->
             <div class="sidebar">
-                <li onclick=hideSide() onclick=openSettingsSide()><a href="#"><img src="/img/x.png" alt=""></a></li>
+                <li onclick=hideSide() onclick=openSettingsSide()><a href="#"><img src="./img/x.png" alt=""></a></li>
                 <div>
                     <div id="sidebar-content" class="flex flow-column gap gap-4">
                         <h6>Where do you want to go?</h6>
@@ -28,7 +28,7 @@
                     </div>
                     <div id="feature-side">
                         <div class="flex align-center justify-center" id="settingsSide-symbol">
-                            <img src="/img/settings.png" alt="" onclick="openSettingsSide()">
+                            <img src="./img/settings.png" alt="" onclick="openSettingsSide()">
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
 
             <div class="flex align-center justify-center" id="feature">
                 <div id="settings-symbol">
-                    <img src="/img/settings.png" alt="" onclick="openSettings(1)">
+                    <img src="./img/settings.png" alt="" onclick="openSettings(1)">
                 </div>
             </div>
         </div>
@@ -73,25 +73,25 @@
 
         <div class="flex justify-center" id="map">
             <div id="view-all" class="flex flow-column align-center justify-center">
-                <img id="1" class="map-1" src="/img/map-1.png" onclick="viewmap(1)" alt="">
-                <img id="2" class="map-2" src="/img/map-2.png" onclick="viewmap(2)" alt="">
-                <img id="3" class="map-3" src="/img/map-3.png" onclick="viewmap(3)" alt="">
-                <img id="4" class="map-4" src="/img/map-4.png" onclick="viewmap(4)" alt="">
+                <img id="1" class="map-1" src="./img/map-1.png" onclick="viewmap(1)" alt="">
+                <img id="2" class="map-2" src="./img/map-2.png" onclick="viewmap(2)" alt="">
+                <img id="3" class="map-3" src="./img/map-3.png" onclick="viewmap(3)" alt="">
+                <img id="4" class="map-4" src="./img/map-4.png" onclick="viewmap(4)" alt="">
             </div>
 
             <div id="view-map-1" class="w100">
                 <div class="flex flow-column">
                     <div class="flex flow-column" >
                         <div class="flex flow-column align-center" id="navLayer">
-                            <img id="layer" src="/img/layer.png" alt="" onclick="viewall()">
-                            <img src="/img/minus.png" alt="" onclick="viewmap(2)">
+                            <img id="layer" src="./img/layer.png" alt="" onclick="viewall()">
+                            <img src="./img/minus.png" alt="" onclick="viewmap(2)">
                         </div>
                     </div>
                 </div>
 
                 <div class="map-container">
                     <div class="flex align-center justify-center">
-                        <img id="1" class="map-1" src="/img/map-1.png" alt="">
+                        <img id="1" class="map-1" src="./img/map-1.png" alt="">
                     </div>
                     <div class="marker marker1" onclick="openTenant('haidilao')"></div>
                     <div class="marker marker2" onclick="openTenant('zara')"></div>
@@ -103,16 +103,16 @@
                 <div class="flex flow-column">
                     <div class="flex flow-column" id="navLayer" >
                         <div class="flex flow-column align-center">
-                            <img src="/img/plus.png" alt="" onclick="viewmap(1)">
-                            <img id="layer" src="/img/layer.png" alt="" onclick="viewall()">
-                            <img src="/img/minus.png" alt="" onclick="viewmap(3)">
+                            <img src="./img/plus.png" alt="" onclick="viewmap(1)">
+                            <img id="layer" src="./img/layer.png" alt="" onclick="viewall()">
+                            <img src="./img/minus.png" alt="" onclick="viewmap(3)">
                         </div>
                     </div>
                 </div>
 
                 <div class="map-container">
                     <div class="flex align-center justify-center">
-                        <img id="2" class="map-2" src="/img/map-2.png" alt="">
+                        <img id="2" class="map-2" src="./img/map-2.png" alt="">
                     </div>
                     <div class="marker marker4" onclick="openTenant('uniqlo')"></div>
                     <div class="marker marker5" onclick="openTenant('gyukaku')"></div>
@@ -124,16 +124,16 @@
                 <div class="flex flow-column">
                     <div class="flex flow-column" id="navLayer">
                         <div class="flex flow-column align-center">
-                            <img src="/img/plus.png" alt="" onclick="viewmap(2)">
-                            <img id="layer" src="/img/layer.png" alt="" onclick="viewall()">
-                            <img src="/img/minus.png" alt="" onclick="viewmap(4)">
+                            <img src="./img/plus.png" alt="" onclick="viewmap(2)">
+                            <img id="layer" src="./img/layer.png" alt="" onclick="viewall()">
+                            <img src="./img/minus.png" alt="" onclick="viewmap(4)">
                         </div>
                     </div>
                 </div>
 
                 <div class="map-container">
                     <div class="flex align-center justify-center">
-                        <img id="3" class="map-3" src="/img/map-3.png" alt="">
+                        <img id="3" class="map-3" src="./img/map-3.png" alt="">
                     </div>
                     <div class="marker marker7" onclick="openTenant('xxi')"></div>
                     <div class="marker marker8" onclick="openTenant('ibox')"></div>
@@ -145,15 +145,15 @@
                 <div class="flex flow-column">
                     <div class="flex flow-column" id="navLayer" >
                         <div class="flex flow-column align-center">
-                            <img src="/img/plus.png" alt="" onclick="viewmap(3)">
-                            <img id="layer" src="/img/layer.png" alt="" onclick="viewall()">
+                            <img src="./img/plus.png" alt="" onclick="viewmap(3)">
+                            <img id="layer" src="./img/layer.png" alt="" onclick="viewall()">
                         </div>
                     </div>
                 </div>
 
                 <div class="map-container">
                     <div class="flex align-center justify-center">
-                        <img id="4" class="map-4" src="/img/map-4.png" alt="">
+                        <img id="4" class="map-4" src="./img/map-4.png" alt="">
                     </div>
                     <div class="marker marker10" onclick="openTenant('wingstop')"></div>
                     <div class="marker marker11" onclick="openTenant('kfc')"></div>
