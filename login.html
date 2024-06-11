@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/color.css">
+    <link rel="stylesheet" href="/css/font.css">
+</head>
+<body class="w100 bg d-gray flex align-center justify-center">
+    <form method="get">
+        <div id="regist-box" class="flex flow-column gap gap-4 align-center bg gray border rad-1">
+            <div>
+                <h1 id="logo" class="text green">Locate-In</h1>
+            </div>
+    
+            <div class="margin mt-10">
+                <input type="email" placeholder="Email" id="email-data" required>
+                <br>
+                <a id="error-email" class="text red"></a>
+            </div>
+    
+            <div class="margin mt-10">
+                <input type="password" placeholder="Password" id="password-data" required>
+                <br>
+                <a id="error-password" class="text red"></a>
+            </div>
+    
+            <div class="margin mt-10">
+                <button type="button" onclick="validateForm(0)" id="submit">Login</button>
+            </div>
+
+            <div class="flex margin mt-2 text white">
+                <a>Don't have an account? &nbsp</a><a href="register.html" id="link">Register</a>
+            </div>
+        </div>
+    </form>
+
+    <script src="/script.js"></script>
+</body>
+</html>
