@@ -4,6 +4,10 @@ body{
     font-family: Josh;
 }
 
+a{
+    text-decoration: none;
+}
+
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
