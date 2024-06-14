@@ -4,10 +4,6 @@ body{
     font-family: Josh;
 }
 
-a{
-    text-decoration: none;
-}
-
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
@@ -35,6 +31,7 @@ button{
 }
 
 #regist-box{
+    min-width: fit-content;
     width: 50vw;
     padding: 10vh 0.1vw;
     text-wrap: wrap;
@@ -99,33 +96,34 @@ input[type=subject]{
     border: none;
 }
 
-input[type=feedback]{
-    border-radius: 15px;
-    background-color: var(--dark-gray);
-    font-size: 1.2rem;
-    color: #ADADAD;
+textarea{
+    width: 230px;
+    height: 100px;
     padding: 1vh 2vw;
+    border-radius: 15px;
     border: none;
-    height: 200px;
-
-    padding-top: 0;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-start; /* Align content to the top */
+    font-size: 16px;
+    transition: background-color 0.3s;
+    background-color: var(--dark-gray);
+    color: #ADADAD;
+    resize: none;
 }
 
-input[type=feedback]::placeholder{
-    text-align: left;
-    padding-top: -100vh;
-    margin: 0;
-    transform: translateY(-300%);
+textarea::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* ──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
-───▄▄██▌█ beep beep--------------
-▄▄▄▌▐██▌█ -20rr delivery------------
-███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌
-▀(@)▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀(@)▀ */
+textarea::placeholder{
+    font-family: Josh;
+}
+
+#feedback h1{
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+}
 
 #submit{
     font-size: 1rem;
@@ -350,8 +348,13 @@ input[type=feedback]::placeholder{
     width: 30px;
 }
 
-#arrow{
+.arrow{
     padding: 1vh 2vw;
+    margin-left: 0px;
+}
+
+.arrow h1:hover{
+    font-size: 40px;
 }
 
 #help-content{
@@ -382,9 +385,26 @@ input[type=feedback]::placeholder{
     object-fit: cover;
 }
 
-
 @media screen and (max-width: 768px) {
-    #sidebar h1, #search, #feature{
+    textarea{
+        width: 200px;
+    }
+    
+    .arrow{
+        min-width: fit-content;
+        text-align: left;
+        z-index: 999;
+    }
+    #settings{
+        display: none;
+        padding: 0px;
+        border-radius: 0px;
+        border-style:none;
+        border-width:0px;
+        border-color:transparent;
+    }
+    
+    #sidebar h1, #search, #feature,#settings-content,#settings h2{
         display: none;
     }
 
@@ -394,7 +414,7 @@ input[type=feedback]::placeholder{
         gap: 10px;
     }
 
-    input[type=text]{
+    input[type=text], input[type=email], input[type=password], input[type=name], input[type=subject]{
         font-size: 1rem;
     }
 
@@ -419,8 +439,9 @@ input[type=feedback]::placeholder{
         width: 23px;
     }
 
-    #regist-box{
-        min-width: 45vh;
+    .feedback-box{
+        margin-left: -35px;
+        min-width: fit-content;
         padding: 10vh 0.1vw ;
         text-wrap: wrap;
     }
