@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate-In</title>
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/color.css">
+    <link rel="stylesheet" href="/css/font.css">
+</head>
+<body class="w100 bg d-gray flex align-center justify-center">
+    <div class="flex gap gap-4 w50">
+        <div class="arrow">
+            <a href="home.html"><h1 id="arrow" class="text white">&#10094</h1></a>
+        </div>
+        
+        
+        <div class="flex align-center justify-center w100" id="feedback-form">
+            <form method="get">
+                <div id="regist-box" class="flex flow-column gap gap-4 align-center bg gray border rad-1 feedback-box">
+                    <div>
+                        <h1 id="logo" class="text green">Feedback</h1>
+                    </div>
+                    <div class="margin mt-10">
+                        <input type="name" placeholder="Name" id="name-data" required>
+                        <br>
+                        <a id="error-name" class="text red"></a>
+                    </div>
+    
+                    <div class="margin mt-10">
+                        <input type="email" placeholder="Email" id="email-data" required>
+                        <br>
+                        <a id="error-email" class="text red"></a>
+                    </div>
+            
+                    <div class="margin mt-10">
+                        <input type="subject" placeholder="Subject" id="subject-data" required>
+                        <br>
+                        </div>
+                    <a id="error-subject" class="text red"></a>
+    
+                    <div id="feedback" class="margin mt-10">
+                        <h1>
+                            Feedback:
+                        </h1>
+                        <textarea placeholder="Enter Feedback" id="feedback-data" name="feedback" ></textarea>
+                        <br>
+                        </div>
+                    <a id="error-feedback" class="text red"></a>
+            
+                    <div class="margin mt-10">
+                        <button type="button" onclick="validateFeedback()" id="submit">Submit</button>
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
