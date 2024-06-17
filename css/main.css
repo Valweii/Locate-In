@@ -297,29 +297,35 @@ textarea::placeholder{
 
 .marker{
     position: absolute;
-    contain: content;
-    width: 2%; /* Adjust as necessary */
-     height: 12%; /* Adjust as necessary */
-    background: url('../img/location-marker.png') no-repeat center center;
-    background-size: cover;
+    width: 3%; /* Adjust as necessary */
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; /* Centers the background image */
     z-index: 999;
     transition: all ease-in-out 200ms;
-}
 
+    &.food{
+        background-image: url('/img/food.png');
+    }
+
+    &.shop{
+        background-image: url('/img/shop.png');
+    }
+}
 .marker:hover{
-    width: 2.3%;
-    height: 14.5%;
+   transform: translateY(-10%);
 }
 
-.marker1 { top: 90%; left: 46%;}
-.marker2 { top: 76%; left: 54.5%;}
-.marker3 { top: 50%; left: 55%;}
+.marker1 { top: 85%; left: 46%;}
+.marker2 { top: 74%; left: 54%;}
+.marker3 { top: 48%; left: 55%;}
 .marker4 { top: 75%; left: 30%;}
 .marker5 { top: 100%; left: 45%;}
 .marker6 { top: 74%; left: 62%;}
 .marker7 { top: 50%; left: 64%;}
 .marker8 { top: 100%; left: 32%;}
-.marker9 { top: 122%; left: 36.5%;}
+.marker9 { top: 119%; left: 36.5%;}
 .marker10 { top: 122%; left: 36.5%;}
 .marker11 { top: 105%; left: 65%;}
 .marker12 { top: 60%; left: 43%;}
