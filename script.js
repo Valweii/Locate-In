@@ -36,6 +36,47 @@ function validateForm(x){
     }
 }
 
+function validateFeedback(){
+    let email = document.getElementById("email-data").value
+    let name = document.getElementById("name-data").value
+    let subject = document.getElementById("subject-data").value
+    let feedback = document.getElementById("feedback-data").value
+    let valid = true;
+
+    if (!email.endsWith("@gmail.com")){
+        document.getElementById("error-email").innerHTML = "Email must end with @gmail.com"
+        valid = false
+    }else{
+        document.getElementById("error-email").innerHTML = ""
+    }
+
+    if(name.length<6){
+        document.getElementById("error-name").innerHTML = "name must be at least 6 characters"
+        valid = false
+    }else{
+        document.getElementById("error-name").innerHTML = ""
+    }
+
+    if(subject.length<4){
+        document.getElementById("error-subject").innerHTML = "subject must be at least 4 characters"
+        valid = false
+    }else{
+        document.getElementById("error-subject").innerHTML = ""
+    }
+
+    if(feedback.length<1){
+        document.getElementById("error-feedback").innerHTML = "feeedback can't be empty"
+        valid = false
+    }else{
+        document.getElementById("error-feedback").innerHTML = ""
+    }
+
+    if(valid){
+        alert("Thank you for the feedback you have provided!")
+        window.location.href = "home.html";
+    }
+}
+
 function alphanumeric(password){
     let isAlpha = false
     let isNumeric = false
