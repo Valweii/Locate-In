@@ -306,11 +306,11 @@ textarea::placeholder{
     transition: all ease-in-out 200ms;
 
     &.food{
-        background-image: url('/img/food.png');
+        background-image: url('../img/food.png');
     }
 
     &.shop{
-        background-image: url('/img/shop.png');
+        background-image: url('../img/shop.png');
     }
 }
 .marker:hover{
