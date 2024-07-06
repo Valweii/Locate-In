@@ -2,14 +2,6 @@ body{
     margin: 0;
 }
 
-.y-hidden{
-  overflow-y: hidden;
-}
-
-a{
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -281,4 +273,16 @@ a{
 
 .h100vh{
   height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}
+
+.y-hidden{
+  overflow-y: hidden;
+}
+
+.rotate-180{
+  rotate: 180deg;
 }
